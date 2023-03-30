@@ -1,3 +1,15 @@
-playbook
-my playbook
+
+-name: test playbook
+ connection: local
+ host: localhost
+ vars:
+   username: "reetishoff244"
+ tasks:
+   -name: print username
+    debug:
+      msg: "{{username}}"
+
+
+ 
+
 
